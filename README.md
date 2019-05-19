@@ -1,4 +1,4 @@
-# 520表白神器_python照片墙制作工具
+# Python照片墙制作工具
 
 # Prepare
 python3环境
