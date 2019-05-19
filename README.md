@@ -24,7 +24,7 @@ python3 index.py 1     (不含tip.png, 照片数10)
 python3 index.py 1 40  (不含tip.png, 照片数40)
 
 ```
-5. copy goal.png 给妹子 ~
+5. Sent goal.png to your girl ~
 
 # Problems
 [ ] imgCount大于实际images/下数目时部分图片不展示
