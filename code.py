@@ -39,7 +39,7 @@ def save_photo_wall(noTipImage, imgCount):
             try:
                 if picMatrix[y][x] == 1:
                     needImgNum = needImgNum + 1
-                    fromImage = Image.open(r"s.jpg" % str(imgIndex % imgCount))
+                    fromImage = Image.open(r"./images/%s.jpg" % str(imgIndex % imgCount))
                     fromImage = fromImage.resize((100, 100), Image.ANTIALIAS)
                     toImage.paste(fromImage, (x * mw, y * mw))
                     imgIndex = imgIndex + 1
@@ -50,7 +50,7 @@ def save_photo_wall(noTipImage, imgCount):
 
     # 底部加文字图片
     if not noTipImage:
-        tipImage = Image.open(r"tip.png")
+        tipImage = Image.open(r"./images2/tip.png")
         tipImage.resize((100 * (w - 2), 100), Image.ANTIALIAS)
         toImage.paste(tipImage, (100, int((y + 0.7) * mw)))
 
@@ -59,7 +59,7 @@ def save_photo_wall(noTipImage, imgCount):
     toImage.show()
 
     # todo sr
-    toImage.save('goal.png')
+    toImage.save('she.png')
 
 if __name__ == '__main__':
     imgCount = 10
